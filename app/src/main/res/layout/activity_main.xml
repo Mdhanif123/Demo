@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/gifView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src= "@drawable/android"/>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_below="@+id/gifView"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="@string/Name"
+        android:fontFamily="@font/ales"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_below="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="@string/Number"
+        android:fontFamily="@font/ales"
+        />
+
+    <TextView
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/border"
+    android:layout_below="@+id/number"
+    android:id="@+id/department"
+    android:layout_width="300dp"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:fontFamily="@font/ales"
+    android:text="@string/select_department" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/department"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitdata"
+        android:fontFamily="@font/ales"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_check_black_24dp"
+        app:elevation="@dimen/cardview_default_radius"
+        app:fabSize="normal"
+        tools:ignore="PrivateResource"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        app:fabCustomSize= "64dp"
+        app:maxImageSize= "48dp"
+        app:rippleColor= "@color/colorAccent"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

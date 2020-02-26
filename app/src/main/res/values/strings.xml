@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="Name">Enter Name</string>
+    <string name="Number">Enter Enrollment Number</string>
+    <string name="Department">Enter Department</string>
+    <string name="selected_item">Selected Item</string>
+    <string name="select_department">Select Department</string>
+    <string name="formFilled">Successful</string>
+    <string name="Empty">Form Empty</string>
+    <string name="send">Send</string>
+    <string name="submitdata">SubmitData</string>
+    <string name="show_data">Show Data</string>
+    <string name="show_saved_details">Show Database</string>
+    <string name="data_submitted">Data Submitted</string>
+    <string name="updatedatabase">UpdateDatabase</string>
+    <string name="deletesomevaluefromdatabase">DeleteValue</string>
+    <string-array name="Values">
+        <item>Select</item>
+        <item>Android</item>
+        <item>IOS</item>
+        <item>Flutter</item>
+    </string-array>
+</resources>

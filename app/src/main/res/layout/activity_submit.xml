@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Submit">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_submitted"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/showNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Number"
+        />
+    <EditText
+        android:id="@+id/showName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Name"
+        />
+    <EditText
+        android:id="@+id/showDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Department"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnshowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/show_saved_details" />
+    <Button
+        android:id="@+id/btnupdateData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updatedatabase"
+        />
+    <Button
+        android:id="@+id/btndeleteData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deletesomevaluefromdatabase"
+        />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
